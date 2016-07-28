@@ -13,7 +13,12 @@ public class User {
     private Picture picture;
 
     public String getName(){
-        return name.first  + " " + name.last;
+        return name.first;
+    }
+    public String getSurname(){return name.last;}
+
+    public Picture getPicture() {
+        return picture;
     }
 }
 
