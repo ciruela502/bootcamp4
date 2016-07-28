@@ -12,10 +12,13 @@ public class User {
     @SerializedName("picture")
     private Picture picture;
 
-    public String getName(){
-        return name.first;
+    public String getName() {
+        return name.getFirst();
     }
-    public String getSurname(){return name.last;}
+
+    public String getSurname() {
+        return name.getLast();
+    }
 
     public Picture getPicture() {
         return picture;
